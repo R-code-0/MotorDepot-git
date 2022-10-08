@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="390b768e-555c-4045-8418-8d9c5f3147db" name="Changes" comment="1-2 tasks done">
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/truck.json" beforeDir="false" afterPath="$PROJECT_DIR$/truck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/entities/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/entities/State.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665234376268</updated>
-      <workItem from="1665234377835" duration="1324000" />
+      <workItem from="1665234377835" duration="1642000" />
     </task>
     <task id="LOCAL-00001" summary="Fix typo">
       <created>1665235228956</created>
@@ -87,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665235539346</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1-2 tasks done">
+      <created>1665235737809</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665235737809</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
