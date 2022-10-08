@@ -43,7 +43,8 @@ public class Main {
             }
             return json.toString();
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage()+"\nЗавершение");
+            System.exit(1);
         }
         return json.toString();
     }
