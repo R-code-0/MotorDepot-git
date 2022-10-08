@@ -22,9 +22,3 @@ public class Truck {
 
 }
 
-enum State {
-    BASE, ROUTE, REPAIR
-
-
-}
-
