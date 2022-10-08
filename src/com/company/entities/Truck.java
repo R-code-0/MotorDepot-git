@@ -17,14 +17,11 @@ public class Truck {
 
     @Override
     public String toString() {
-        return id + "  |" + truckName + "     |" + State + "      |" + driver;
+        int x = 16 - truckName.length();
+        int y = 9 - driver.length();
+        int z = 3 - (id + "").length();
+        return id + " ".repeat(z >= 0 ? z : 1) + " | " + truckName + " ".repeat(x) + " | " + driver + " ".repeat(y) + " | " + State;
     }
-
-}
-
-enum State {
-    BASE, ROUTE, REPAIR
-
 
 }
 

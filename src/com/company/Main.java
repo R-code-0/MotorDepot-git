@@ -1,14 +1,15 @@
 package com.company;
 
+import com.company.entities.Driver;
+import com.company.entities.Truck;
+import com.company.service.ServiceImpl;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
 
 public class Main {
 
@@ -22,13 +23,24 @@ public class Main {
     }
 
     public static void buttons(){
-        System.out.println("Press 1 to change Driver\n" +
-        "Press 2 to send to the Route\n" +
-        "Press 3 to send to the Repairing\n");
+        ServiceImpl srv = new ServiceImpl();
+        System.out.println("""
+                #   | Bus              |  Driver   |  State
+                ————|——————————————————|———————————|—————————>""");
+        for (Truck s : srv.getTrucks()) {
+            System.out.println(s);
+        }
+        System.out.println();
+        System.out.println("""
+                #   | Driver           | Bus
+                ————|——————————————————|——————————>""");
+        for (Driver s : srv.getDrivers()) {
+            System.out.println(s);
+        }
     }
 
 
-   public static String readTtuck() {
+   public static String readTruck() {
        return getString(WRITE_PATH);
    }
 
@@ -45,7 +57,8 @@ public class Main {
             }
             return json.toString();
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage()+"\nЗавершение");
+            System.exit(1);
         }
         return json.toString();
     }
