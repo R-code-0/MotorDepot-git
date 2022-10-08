@@ -1,7 +1,7 @@
 package com.company.entities;
 
 public enum State {
-    BASE, REPAIR, ROUTE
+    BASE, ROUTE, REPAIR
 
 
 }
