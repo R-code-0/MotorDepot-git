@@ -1,5 +1,8 @@
 package com.company;
 
+import com.company.entities.Driver;
+import com.company.entities.Truck;
+import com.company.service.ServiceImpl;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -20,9 +23,20 @@ public class Main {
     }
 
     public static void buttons(){
-        System.out.println("Press 1 to change Driver\n" +
-        "Press 2 to send to the Route\n" +
-        "Press 3 to send to the Repairing\n");
+        ServiceImpl srv = new ServiceImpl();
+        System.out.println("""
+                #   | Bus              |  Driver   |  State
+                ————|——————————————————|———————————|—————————>""");
+        for (Truck s : srv.getTrucks()) {
+            System.out.println(s);
+        }
+        System.out.println();
+        System.out.println("""
+                #   | Driver           | Bus
+                ————|——————————————————|——————————>""");
+        for (Driver s : srv.getDrivers()) {
+            System.out.println(s);
+        }
     }
 
 
